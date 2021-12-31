@@ -42,17 +42,45 @@ def referencia_ureia_eletrolitos():
     print("Ureia [M 19 a 43 mg/dL] [F 15 a 36 mg/dL]")
 
 
+def escala_rass():
+    print(
+        "\nRASS +4: agressivo - muito agressivo e/ou violento; perigo iminente à equipe cuidadora"
+    )
+    print("RASS +3: muito agitado - puxa ou retira tubos e cateteres")
+    print(
+        "RASS +2: agitado - movimento não-intencionais incoordenados frequentes, mal acoplado ao ventilador"
+    )
+    print("RASS +1: inquieto - ansioso, porém sem movimentos agressivos e/ou vigorosos")
+    print("RASS 0: alerta e calmo - estado basal normal")
+    print(
+        "RASS -1: sonolento - não está completamente alerta, mas é capaz de manter abertura ocular e/ou contato visual ao som da voz por mais de 10 segundos"
+    )
+    print(
+        "RASS -2: sedação leve - desperta brevemente e estabelece contato visual por menos de 10 segundos"
+    )
+    print(
+        "RASS -3: sedação moderada - movimentos e/ou abertura ocular ao estímulo verbal sem estabelecer contato visual"
+    )
+    print(
+        "RASS -4: sedação profunda - não responde ao comando verbal, mas se movimenta ou abre os olhos por estímulo físico"
+    )
+    print("RASS -5: não despertável - não responde a estímulo sonoro ou físico")
+    print("\nObjetivo: manter entre RASS -2 a +1")
+
+
 function_list = [
     formula_winter,
     referencia_gasometria,
     referencia_hemograma,
     referencia_ureia_eletrolitos,
+    escala_rass,
 ]
 name_list = [
     "Fórmula de Winter",
     "Referência Gasometria",
     "Referência Hemograma",
     "Referência Ureia e Eletrólitos",
+    "Escala RASS",
 ]
 
 name_list, function_list = zip(*sorted(zip(name_list, function_list)))
